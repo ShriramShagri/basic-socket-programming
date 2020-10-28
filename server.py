@@ -9,7 +9,7 @@ def createSocket():
         global host, port, s
 
         host = ""
-        port = 8000
+        port = 1729
         s = socket.socket()
     
     except socket.error as err:
