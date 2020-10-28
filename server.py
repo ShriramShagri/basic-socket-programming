@@ -8,7 +8,7 @@ def createSocket():
     try:
         global host, port, s
 
-        host = ""
+        host = "3.128.204.221"
         port = 1729
         s = socket.socket()
     
