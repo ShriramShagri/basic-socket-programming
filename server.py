@@ -44,7 +44,7 @@ def sendCommand(conn):
         if len(str.encode(cmd)) > 0:
             conn.send(str.encode(cmd))
             clientRes = str(conn.recv(1024), "utf-8")
-            print(clientRes, end="")
+            print(clientRes)
 
 if __name__ == "__main__":
     createSocket()
