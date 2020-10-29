@@ -8,8 +8,8 @@ def createSocket():
     try:
         global host, port, s
 
-        host = "3.128.204.221"
-        port = 1729
+        host = "0.0.0.0"
+        port = 9999
         s = socket.socket()
     
     except socket.error as err:
@@ -25,7 +25,7 @@ def bind_socket():
 
     except socket.error as err:
         print("Socker Binding Error: " + str(err) +"\nRetrying...")
-        bind_socket()
+        # bind_socket()
 
 def socket_Accept():
     conn, add = s.accept()
@@ -36,7 +36,7 @@ def socket_Accept():
 
 def sendCommand(conn):
     while True:
-        cmd = input()
+        cmd = str(input())
         if cmd == 'quit':
             conn.close()
             s.close()
