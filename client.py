@@ -2,9 +2,9 @@ import socket
 import os
 import subprocess
 
-s = socket.socket()
-host = "192.168.43.136"
-port = 8000
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+host = "server IPv4 Address Here" 
+port = 9999
 
 s.connect((host, port))
 
