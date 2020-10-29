@@ -13,7 +13,9 @@ Then type the commands from the server to execute them on the client's computer.
 * Create and launch an EC2 instance. (linux, windows...any)
 * Edit the Security Group and add all traffic with source 0.0.0.0/0. (There might be a specific protocol..I'll mention later)
 * Open terminal for instance. (Maybe using PuTTY)
-* Install python3 if not installed. To do this-
+* Install python3 if not installed.
+* Now save and run the [server.py](server.py) file in the instance.
+
 
 Run to check is python3 is installed
 
@@ -46,8 +48,7 @@ python3: //usr/bin/python3 /usr/bin/python3.7 /usr/bin/python3.7m /usr/lib/pytho
 ```
 
 If Python 3 isn't already installed, then install the package using the yum package manager.
+
 ```bash
 [ec2-user ~]$ sudo yum install python3 -y
 ```
-
-* Now save and run the [server.py](server.py) file in teh instance.
